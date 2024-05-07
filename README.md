@@ -2,6 +2,13 @@
 
 ## Please follow step by step installation and application run process for Tracing Demo
 
+# minimum hardware requirement
+
+```bash
+CPU: 4 Core
+RAM: 8GB
+Storage: 30GB
+```
 
 ### Installing VirtualBox on Ubuntu OS / Windows WSL2 Ubuntu
 
@@ -43,6 +50,34 @@ sudo apt update && sudo apt install vagrant
 ## After installation complete restart your computer
 
 
-### Now go into vagrant folder of the repo.
+```bash
+# Now go into vagrant folder of the repo.
+cd vagrant/
+# Change between 62 to 70 number line according to your Hardware capacity
 
+# run vagrant server wait until finish the vagrant server setup
+vagrant up
 
+# now get into ubuntu server with the command of
+vagrant ssh
+
+```
+
+## Before START minikube
+
+```bash
+sudo usermod -aG docker $USER && newgrp docker
+
+# start minikube (Kubernetes environment) with this command
+
+minikube start --kubernetes-version=v1.29.4 --nodes 1 --cpus 4 --memory 4096 --disk-size 25g --driver=docker
+
+# After installation finished check minikube node and running pods by
+
+kubectl get nodes
+
+# get pods within all namespace
+
+kubectl get pods -A
+
+```
