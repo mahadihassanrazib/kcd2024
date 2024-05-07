@@ -81,3 +81,5 @@ kubectl get nodes
 kubectl get pods -A
 
 ```
+
+## Congratulations finally you setup a fully functional Kubernetes Cluster! Best of Luck 👍
