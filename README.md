@@ -30,7 +30,11 @@ sudo dpkg -i virtualbox-7.0_7.0.18-162988~Ubuntu~jammy_amd64.deb
 
 # Install the downloaded VirtualBox package for ubuntu 20.04 using the dpkg command.
 sudo dpkg -i virtualbox-7.0_7.0.18-162988~Ubuntu~focal_amd64.deb
-
+```
+### Install Virtualbox on MacOS
+Install Virtualbox for MacOS using homebrew
+```bash
+brew install --cask virtualbox
 ```
 
 ### Installing Vagrant with HashiCorp Repository on Ubuntu OS / Windows WSL2 Ubuntu
@@ -44,7 +48,13 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://
 
 # Update the list of available packages and install Vagrant from the HashiCorp repository.
 sudo apt update && sudo apt install vagrant
+```
 
+### Install Vagrant on MacOS
+Install Vagrant for MacOS using homebrew
+```bash
+brew tap hashicorp/tap
+brew install hashicorp/tap/hashicorp-vagrant
 ```
 
 ## After installation complete restart your computer
