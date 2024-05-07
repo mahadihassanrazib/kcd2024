@@ -61,6 +61,8 @@ vagrant up
 # now get into ubuntu server with the command of
 vagrant ssh
 
+## with this run it will install Docker, Minikube and Kubectl software tools in Ubuntu 20.04 Server.
+
 ```
 
 ## Before START minikube
